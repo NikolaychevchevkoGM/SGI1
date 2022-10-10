@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productos.css">
+    <title>productos</title>
+</head>
+<body>
+    <section class="form-register">
+        <h4>Registro de productos</h4>
+        <form action="php/agreg_prod.php" method="post">
+        <input class="controls" type="text" name="nomb_prod" id="nombProd" placeholder="Ingrese el nombre">
+        <input class="controls" type="text" name="color_prod" id="colorProd" placeholder="Ingrese el color">
+        <input class="controls" type="text" name="tipo_material" id="tipoMaterial" placeholder="Ingrese el tipo de material">
+        <textarea class="controls" name="desc_prod" id="descProd" placeholder="Ingrese la descripción del producto"></textarea>
+        <input class="controls" type="text" name="cantidad_lotes" id="cantidadLotes" placeholder="Cantidad de lotes">
+        <input class="controls" type="text" name="cant_por_lote" id="cantPorLote" placeholder="Cantidad en cada lote">
+        <input class="botons" type="submit" value="Registrar producto">
+
+        <!-- <p><a href="#">¿Quieres eliminar algun producto?</a></p> -->
+    </form>
+    </section>
+</body>
+</html>
