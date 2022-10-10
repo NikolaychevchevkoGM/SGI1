@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar insumos</title>
+    <style>
+        body{
+            background-color: #D5FFCF;
+        }
+    </style>
+</head>
+<body>
+    <b><h1 align="center">Agregar insummo</h1></b>
+    <h2></h2>
+    <!--apartado de insumos-->
+
+    <form action="" method="get" name="insumos" id="insum">
+        <fieldset style="background-color:#ffffffad;" align="center">
+            <u><b><legend>Infromasion del insumo</legend></b></u><br>
+            <label for="insum">Codigo del insumo(unico):</label>
+            <input type="text" size="30" id="id_insumos"><br><br>
+            <label for="insum">Descripcion del insumo:</label><br>
+            <textarea name="descripsion_insum" id="descripsion_insum" cols="40" rows="5"></textarea><br><br>
+            <label for="insum">Unidades</label>
+            <input type="number" id="unidades_insum" list="" min="0" max="9999"><br><br>
+            <label for="insum">Tipo de insumos</label>
+            <select name="Tipo de insummo" id="Tipo_insumo">
+                <optgroup label="Mano de obra">
+                <option value="">Directa</option>
+                <option value="">Indirecta</option>
+                </optgroup>
+                <optgroup label="Capital">
+                <option value="">materia prima</option>
+                <option value="">materia industrial</option>
+                </optgroup>
+            </select><br><br>
+            <label for="insum">proveedor</label>
+            <input type="text" size="30" id="proveedor_insum"><br><br>
+            <label for="insum">grupo para el insumo:</label>
+            <input type="text" id="grupo_insum" size="30"><br><br>
+            <label for="insum">Fecha de entrega:</label>
+            <input type="date" name="fecha_entre_insum" id="fecha_entre_insum"><br><br>
+            <input type="submit" name="Registrar insumo" id="registrar_insum">
+
+        </fieldset> <br><br>
+
+        </fieldset>
+    </form>
+
+    <!--div style="text-align:left;" tambien sirve para alinear texto-->
+
+    <table border="1" width="10%">
+        <tbody>
+            <tr><td>
+                <div style="text-align:center;">
+                    <u><b><a href="index.html">Agregar producto</a></b></u>
+            </tr></td>
+        </div>
+       </tbody>
+    </table>    
+</body>
+</html>
