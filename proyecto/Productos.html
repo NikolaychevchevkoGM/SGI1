@@ -10,15 +10,17 @@
 <body>
     <section class="form-register">
         <h4>Registro de productos</h4>
-        <input class="controls" type="text" name="codigo producto" id="codigo producto" placeholder="Ingrece el codigo">
-        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrece el nombre">
-        <input class="controls" type="text" name="color" id="color" placeholder="Ingrece el color">
-        <input class="controls" type="text" name="tipo-material" id="tipo-material" placeholder="Ingrece el tipo de material">
-        <input class="controls" type="text" name="Descripción" id="Descripción" placeholder="Ingrece la Descripción">
-        <input class="controls" type="text" name="cantidad-lotes" id="cantidad-lotes" placeholder="Cantidad de lotes">
-        <input class="controls" type="text" name="cantidadXlote" id="cantidadXlote" placeholder="Cantidad en cada lote">
+        <form action="" method="post">
+        <input class="controls" type="text" name="id_producto" id="id_producto" placeholder="Ingrese el codigo">
+        <input class="controls" type="text" name="nomb_producto" id="nomb_producto" placeholder="Ingrese el nombre">
+        <textarea class="controls" type="text" name="descripcion" id="descripcion" placeholder="Ingrese la descripcion">
+        <input class="controls" type="text" name="material" id="material" placeholder="Ingrese el tipo de material">
+        <input class="controls" type="text" name="color" id="color" placeholder="Ingrese el color">
+        <input class="controls" type="text" name="cant_lotes" id="cant_lotes" placeholder="Cantidad de lotes">
+        <input class="controls" type="text" name="cant_por_lote" id="cant_por_lote" placeholder="Cantidad en cada lote">
         <input class="botons" type="submit" value="Registrar producto">
         <p><a href="#">¿Quieres eliminar algun producto?</a></p>
+        </form>
     </section>
 </body>
 </html>
