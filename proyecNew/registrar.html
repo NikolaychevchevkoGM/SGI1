@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/stylinic.css" >
+    <title>Crear Cuenta</title>
+    <link rel="shortcut icon" href="./assets/img/hexagono.png" type="image/x-icon">
+    <style type="text/css"> 
+        a { text-decoration: none; 
+            color: white;} 
+        </style> 
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="text-center">
+            <h2 class="mt-2">SISTEMA DE REGISTRO</h2>
+        </div>
+        <div class="form">
+            <form action="" id="formIncio" >
+                <div class="mb-3" class="form-group">
+                    <label for="Correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" name="correo" id="correo"  placeholder="Correo">
+                </div>
+                <div class="mb-3" class="form-group">
+                    <label for="usuario" class="form-label">Nombdre de usuario</label>
+                    <input type="text" class="form-control" name="usuario" id="usuario"  placeholder="Nombre de usario">
+                </div>
+                <div class="mb-3" class="form-group">
+                    <label for="tel" class="form-label">Numero De Contanto</label>
+                    <input type="numeric" class="form-control" name="tel" id="tel"  placeholder="311 455 2332">
+                </div>
+                <div class="mb-3" class="form-group">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" name="contraseña" id="contraseña"  placeholder="contraseña">
+                </div>
+                <div class="mb-3" class="form-group">
+                    <input type="button" class="btn btn-success form-control" value="Crear Cuenta" onclick="registrar()" >
+                </div>
+                <div class="mb-3" class="form-group">
+                    <button type="submit" class="btn btn-light form-control" value=""><a href="inicio.html"  class="btn btn-link form-control">Iniciar Sesion</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/funcValida.js" ></script>
+    <script src="./assets/js/appregis.js" ></script>
+    <script src="./assets/js/sweetalert2.all.min.js"  ></script>
+</body>
+</html>
