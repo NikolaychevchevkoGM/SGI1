@@ -1,0 +1,158 @@
+/* *,
+::before,
+::after{
+    margin:0;
+    padding: 0;
+    box-sizing:0 ;
+    box-sizing: border-box;
+} */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI" 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDo-container{
+    width: 10000px;
+    height: 80vh;
+    display: flex;
+}
+
+.status{
+    width: 25%;
+    background-color: #f3f3f3;
+    position:relative;
+    padding: 60px 0.5rem 1rem;
+}
+
+.status:nth-child(even){
+    background-color: #e9e9e96b;
+}
+
+.status h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #343434;
+    color: #f3f3f3;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+#add_btn{
+    padding: 0.5rem 1rem;
+    background-color: #ccc;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#add_btn:hover{
+    background-color: #aaa;
+}
+
+.list_Todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: rgba(15,15,15,0.1) 0px 0px 0px 1px,
+    rgba(15,15,15,0.1) 0px 2px 4px ;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+
+.list_Todo .close{
+    position: absolute;
+    right: 1rem;
+    top: 0rem;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+.list_Todo .close:hover{
+    color: #343444;
+}
+
+/*Ventana emergente para añadir un Objeto*/
+
+.close-modal{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.modal{
+
+    width: 450px;
+    position: fixed;
+    top: -50%; /*La linea 102 y 103 son las que dan la distancia del guardado de la ventana emergente */
+    left: 50%;
+    transform: translate(-50%, -50%);/*Esta linea nos centra la ventana emergente de derecha a izquiera*/
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #fff;
+}
+
+
+
+.modal.active{
+    top: 20%;/*Esta parte nos sirve para darle la distancia a la vetana del borde superior*/
+}
+
+.modal .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: rgba(0,0,0, 0.05);
+}
+
+.modal .cuerpo{
+    padding: 0.75rem;
+}
+
+#overlay{ /*Esta es la que permite que el focus se mantega solo en la vetana emergente*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#overlay.active{
+    display: block;
+}
+
+/*Estilo del formualario para añadir una tarea*/
+
+#hacer_input,
+#hacer_submit{
+    padding: 0.4px 1px;
+    width: 100%;
+    margin: 0.25rem;
+    font-size: 1.3rem;
+}
+
+#hacer_submit{
+    background-color: #4caf50;
+    color:#f3f3f3;
+}
